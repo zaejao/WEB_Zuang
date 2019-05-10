@@ -1,0 +1,182 @@
+Toggle จาก cdn เป็น อยู่ในไฟล์
+
+SELECT division.id,division.division_name, organization_struc.id , ORG_PATH , ORG_LEVEL
+FROM organization_struc
+JOIN  division ON organization_struc.division_id = division.id
+where ORG_PATH LIKE N'0/49/52' AND ORG_TYPE_PK = 21;
+
+SELECT division_id,id , ORG_PATH , ORG_LEVEL
+FROM [HRIS].[dbo].[organization_struc]
+where division_id = 33004;
+
+SELECT organization_type_id,organization_list.id,organization_list_name,organization_id, organization_level_id
+FROM organization_list
+WHERE organization_list.id = 49;
+
+SELECT id,organization_list_name,organization_type_id,IsActive FROM organization_list
+WHERE organization_list_name LIKE N'%กำลังพล%';
+
+select organization_list_long_name
+from organization_list
+WHERE organization_parent_id = 49;
+
+
+
+
+<section id="demo">
+		<ol class="sortable ui-sortable mjs-nestedSortable-branch mjs-nestedSortable-expanded">
+			<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_1"><div class="menuDiv"> กองทัพอากาศ</div> 
+<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_2"><div class="menuDiv"> กรมกำลังพลกองทัพอากาศ</div> 
+<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_3"><div class="menuDiv"> กองข้อมูล</div> 
+<ol>
+ <li style="display: list-item;" class="mjs-nestedSortable-leaf" id="menuItem_9"><div class="menuDiv"><a href="9">แผนก CIA</a></div></li> 
+ </ol> 
+</li> 
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_7"><div class="menuDiv"> สำนักการปกครองและพัฒนากำลังพล</div> 
+<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_8"><div class="menuDiv"> กองข้อมูลกำลังพล</div> 
+<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_4"><div class="menuDiv"> แผนกวิเคราะห์และพัฒนาระบบ</div> 
+<ol>
+<li style="display: list-item;" class="mjs-nestedSortable-leaf mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_5"><div class="menuDiv"> แผนกFBI</div> 
+<ol>
+ <li style="display: list-item;" class="mjs-nestedSortable-leaf" id="menuItem_6"><div class="menuDiv"><a href="6">หมวด FBI</a></div></li> 
+ </ol> 
+</li> 
+</ol> 
+</li> 
+</ol> 
+</li> 
+</ol> 
+</li> 
+</ol> 
+</li> 
+</ol> 
+</li> 
+</ol> 
+			
+		</ol>
+	</section>
+
+
+
+
+
+<section id="demo">
+		<ol class="sortable ui-sortable mjs-nestedSortable-branch mjs-nestedSortable-expanded">
+			<ol><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_1"><div class="menuDiv"> 
+            กองทัพอากาศ<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick">
+            </span><span title="Click to show/hide item editor" data-id="1" class="expandEditor ui-icon ui-icon-triangle-1-s">
+            </span><span data-id="1" class="itemTitle"></span>
+            <span title="Click to delete item." data-id="1" class="deleteMenu ui-icon ui-icon-closethick"></span>
+            </div><ol>
+				<li style="display: list-item;" class="mjs-nestedSortable-leaf" id="menuItem_6">
+            <div class="menuDiv"><span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick">
+            </span><span title="Click to show/hide item editor" data-id="6" class="expandEditor ui-icon ui-icon-triangle-1-n">
+            </span><span data-id="6" class="itemTitle"></span><span title="Click to delete item." data-id="6" class="deleteMenu ui-icon ui-icon-closethick">
+            </span><a href="6">หมวด FBI</a>  </div></li>
+            <li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_2">
+            <div class="menuDiv"> กรมกำลังพลกองทัพอากาศ<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick">
+            </span><span title="Click to show/hide item editor" data-id="2" class="expandEditor ui-icon ui-icon-triangle-1-n"></span>
+			<span data-id="2" class="itemTitle"></span><span title="Click to delete item." data-id="2" class="deleteMenu ui-icon ui-icon-closethick"></span>
+		</div><ol><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_9"><div class="menuDiv"><span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="9" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="9" class="itemTitle"></span><span title="Click to delete item." data-id="9" class="deleteMenu ui-icon ui-icon-closethick"></span><a href="9">แผนก CIA</a>  </div><ol><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_5"><div class="menuDiv"> แผนกFBI<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="5" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="5" class="itemTitle"></span><span title="Click to delete item." data-id="5" class="deleteMenu ui-icon ui-icon-closethick"></span></div><ol>  </ol></li></ol></li> <li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_7"><div class="menuDiv"> สำนักการปกครองและพัฒนากำลังพล<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="7" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="7" class="itemTitle"></span><span title="Click to delete item." data-id="7" class="deleteMenu ui-icon ui-icon-closethick"></span></div><ol><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_8"><div class="menuDiv"> กองข้อมูลกำลังพล<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="8" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="8" class="itemTitle"></span><span title="Click to delete item." data-id="8" class="deleteMenu ui-icon ui-icon-closethick"></span></div><ol><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_4"><div class="menuDiv"> แผนกวิเคราะห์และพัฒนาระบบ<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="4" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="4" class="itemTitle"></span><span title="Click to delete item." data-id="4" class="deleteMenu ui-icon ui-icon-closethick"></span></div><ol> </ol></li> </ol></li><li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_3"><div class="menuDiv"> กองข้อมูล<span title="Click to shoBoyw/hide children" class="disclose ui-icon ui-icon-minusthick"></span><span title="Click to show/hide item editor" data-id="3" class="expandEditor ui-icon ui-icon-triangle-1-n"></span><span data-id="3" class="itemTitle"></span><span title="Click to delete item." data-id="3" class="deleteMenu ui-icon ui-icon-closethick"></span></div><ol>  </ol></li> </ol></li> </ol></li> </ol></li> </ol>			
+		</ol>
+	</section>
+
+
+
+
+
+
+
+<li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_2">
+		   <div class="menuDiv">
+			   <span title="Click to show/hide children" class="disclose ui-icon ui-icon-minusthick">
+			   <span></span>
+			   </span>
+			   <span title="Click to show/hide item editor" data-id="2" class="expandEditor ui-icon ui-icon-triangle-1-n">
+			   <span></span>
+			   </span>
+			   <span>
+			   <span data-id="2" class="itemTitle">a</span>
+			   <span title="Click to delete item." data-id="2" class="deleteMenu ui-icon ui-icon-closethick">
+			   <span></span>
+			   </span>
+			   </span>
+			   <div id="menuEdit2" class="menuEdit hidden">
+				   <p>
+					   Content or form, or nothing here. Whatever you want.
+				   </p>
+			   </div>
+		   </div>
+		   <ol>
+			   <li style="display: list-item;" class="mjs-nestedSortable-branch mjs-nestedSortable-expanded" id="menuItem_4">
+			   <div class="menuDiv">
+				   <span title="Click to show/hide children" class="disclose ui-icon ui-icon-minusthick">
+				   <span></span>
+				   </span>
+				   <span title="Click to show/hide item editor" data-id="4" class="expandEditor ui-icon ui-icon-triangle-1-n">
+				   <span></span>
+				   </span>
+				   <span>
+				   <span data-id="4" class="itemTitle">c</span>
+				   <span title="Click to delete item." data-id="4" class="deleteMenu ui-icon ui-icon-closethick">
+				   <span></span>
+				   </span>
+				   </span>
+				   <div id="menuEdit4" class="menuEdit hidden">
+					   <p>
+						   Content or form, or nothing here. Whatever you want.
+					   </p>
+				   </div>
+			   </div>
+			   <ol>
+				   <li class="mjs-nestedSortable-leaf" id="menuItem_6">
+				   <div class="menuDiv">
+					   <span title="Click to show/hide children" class="disclose ui-icon ui-icon-minusthick">
+					   <span></span>
+					   </span>
+					   <span title="Click to show/hide item editor" data-id="6" class="expandEditor ui-icon ui-icon-triangle-1-n">
+					   <span></span>
+					   </span>
+					   <span>
+					   <span data-id="6" class="itemTitle">e</span>
+					   <span title="Click to delete item." data-id="6" class="deleteMenu ui-icon ui-icon-closethick">
+					   <span></span>
+					   </span>
+					   </span>
+					   <div id="menuEdit6" class="menuEdit hidden">
+						   <p>
+							   Content or form, or nothing here. Whatever you want.
+						   </p>
+					   </div>
+				   </div>
+				   </li>
+			   </ol>
+			   </li>
+			   <li style="display: list-item;" class="mjs-nestedSortable-leaf" id="menuItem_5">
+			   <div class="menuDiv">
+				   <span title="Click to show/hide children" class="disclose ui-icon ui-icon-minusthick">
+				   <span></span>
+				   </span>
+				   <span title="Click to show/hide item editor" data-id="5" class="expandEditor ui-icon ui-icon-triangle-1-n">
+				   <span></span>
+				   </span>
+				   <span>
+				   <span data-id="5" class="itemTitle">d</span>
+				   <span title="Click to delete item." data-id="5" class="deleteMenu ui-icon ui-icon-closethick">
+				   <span></span>
+				   </span>
+				   </span>
+				   <div id="menuEdit5" class="menuEdit hidden">
+					   <p>
+						   Content or form, or nothing here. Whatever you want.
+					   </p>
+				   </div>
+			   </div>
+			   </li>
+		   </ol>
+		   </li>
