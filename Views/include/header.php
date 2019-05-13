@@ -33,7 +33,9 @@
 
     <link rel="stylesheet" href="../../Asset/Css/custom.css">
 
-    <link rel="stylesheet" href="../../Asset/Css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../Asset/Css/sweetalert2.min.css"> 
+    <link rel="stylesheet" href="../../Asset/Css/custom_plan.css">
+
     <script src="../../Asset/js/sweetalert2.min.js"></script>
   
 

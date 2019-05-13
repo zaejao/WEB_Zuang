@@ -1,0 +1,8 @@
+.table-striped>tbody>tr:nth-child(2n+2)>td,
+.table-striped>tbody>tr:nth-child(2n+2)>th {
+    background-color: #1976d21a;
+}
+.main-menu.menu-light .navigation>li ul a.active{
+    background-color: #0f1733;
+    color: #859ae6;
+}
