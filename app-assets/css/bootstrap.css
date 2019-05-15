@@ -1822,7 +1822,7 @@ pre code {
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 0.6rem;
     font-size: 1rem;
     line-height: 1.25;
@@ -1859,7 +1859,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-    height: calc(2.75rem + 2px);
+    height: calc(2.5rem + 2.5px);
 }
 
 select.form-control:focus::-ms-value {
@@ -3541,7 +3541,7 @@ tbody.collapse.show {
     pointer-events: none;
     content: "";
     user-select: none;
-    background-color: #626E82;
+    background-color: #e2e2e2;
 }
 
 .custom-control-label::after {

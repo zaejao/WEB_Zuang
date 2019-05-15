@@ -5,6 +5,57 @@
 // UPDATE DATE :: 190510
 // VERSION :::::: 0.1 
 /* /////////////////////////////////////////////////////  */
+var planManpower = {
+    url : "/Model/PlanManpower/PlanManpower.inc.php" 
+};
+
+
+planManpower.GetArmy=function(){
+
+    var exDat = {
+        table : "hrt_arm" ,
+        where : { HrtArmActive : "1" },
+        orderby : " CONVERT (   HrtArmAbbr  USING tis620 ) ASC " ,
+        limit : "" ,
+    };
+ 
+	$.ajax({
+		url: planManpower.url+'?mode=LoadAllData',
+		type:'POST',
+		dataType:'json',
+		data:exDat ,
+		success:function(data){
+         	console.log(data);
+        /*
+			$('#'+element_id).find('option').remove()
+			$('<option>').attr('value','ALL').text(selectdept).appendTo('#'+element_id);
+			$.each(data, function(i, result) {
+				var deptname= "";
+				if(langcode=="th"){
+					deptname = result.department_name_th ; 
+				}else{
+					deptname = result.department_name_en ; 
+				}
+				if(result.department_code_ch == v_val ){
+					$(".select2-chosen").text(result.deptname);
+					$('<option>').attr('value', result.department_code_ch).attr('selected', 'selected').text(deptname).appendTo('#'+element_id);
+				}else{
+					$('<option>').attr('value', result.department_code_ch).text(deptname).appendTo('#'+element_id);
+				}
+            });
+            */
+		},
+		error:function(data){
+			console.log(data);
+			console.log('check planManpower.GetArmy');
+			duck.NotiDanger();
+		}
+	});
+
+};
+
+
+
 function getPersonTypes() {
     $('#personTypesTable').DataTable({
         "ajax": {

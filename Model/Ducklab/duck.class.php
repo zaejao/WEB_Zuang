@@ -21,18 +21,13 @@ class DuckClass{
 
  
 		
-		// // DDC.MOPHHost
-		// $this->host =  "203.157.41.81";
-		// $this->user = "root";
-		// $this->passwd= "ddc015508";
-		// $this->dbname = "ddc_dept";
-		// $this->charset =  "utf8";
+	
 
 		// DuckLabHost
 		$this->host =  "localhost";
-		$this->user = "ducklabc_ddc";
-		$this->passwd= "duck170lab19";
-		$this->dbname = "ducklabc_ddc";
+		$this->user = "ducklabc_hris";
+		$this->passwd= "rtafduck1701944";
+		$this->dbname = "rtaf_hris"; //ducklabc_hris
 		$this->charset =  "utf8";
 
 
@@ -49,7 +44,7 @@ class DuckClass{
 
 	}
 
-	public function connectDb1(){
+	private function connectDb1(){
 
 		$this->mysqli = @new mysqli($this->host, $this->user,$this->passwd, $this->dbname);
 		if(mysqli_connect_error()) {
@@ -62,40 +57,12 @@ class DuckClass{
 		    //printf("Current character set: %s n<br>", $this->mysqli->character_set_name()); // ถ้าเปลี่ยนได้
 		}
 
-	}
-
-	public function LoginData($user,$pass){
-		$sql="
-                    SELECT *
-                    FROM `employee`
-                    WHERE
-                    `Emp_Username` = '".$user. "'
-                    AND `Emp_Password` = '".$pass."'
-                    AND `Emp_Display` = 'Y'
-                    AND `Emp_Status` = 'E'
-				";
-		$result['sql'] = $sql ;
-		$myquery = $this->mysqli->query($sql);
-		$numr = mysqli_num_rows($myquery);
-		while($row = $myquery->fetch_assoc() ) {
-			$result[] = $row;
-		}
-
-			if($numr==1){
-				$result['status'] = 'FOUND';
-			}else{
-				$result['status'] = 'FAIL';
-			}
-
-		$myquery->free();
-		return $result;
-
-	}
+	} 
 
 	public function fetchAll($table,$orderby){
 		$sql="
                 SELECT *
-				FROM '".$table."'
+				FROM '".$table."' 
 
 			";
 		$myquery = $this->mysqli->query($sql);

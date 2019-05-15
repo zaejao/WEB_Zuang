@@ -420,7 +420,7 @@ form.form-bordered .form-group>div {
     padding: 1.2rem;
     padding-right: 0;
     border-left: 1px solid #e9ebf5;
-}
+}567
 
 form.form-bordered .form-group.last {
     border-bottom: 0;
@@ -1721,7 +1721,7 @@ select.form-control {
 }
 
 .card-header .card-title {
-    margin-bottom: 0;
+    margin-bottom: 0.5;
 }
 
 .card-header .heading-elements,

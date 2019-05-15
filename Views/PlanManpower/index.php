@@ -36,7 +36,7 @@
                       </ol>
                     </nav>
                     
-                    <table id="personTypesTable" class="table table-striped table-borderless table-hover bootstrap-3 " style="width:100%;">
+                    <table id="planManpowerTable" class="table table-striped table-borderless table-hover bootstrap-3 " style="width:100%;">
                       <thead>
                         <tr style="background-color:#0f1733; color:whitesmoke;text-align: center;">
                           <th><input type="checkbox" class="checkAll" onclick="toggle(this);" /></th>
@@ -76,6 +76,7 @@
   <?php include '../include/footer.php'; ?>
   <script type="text/javascript">
     $(document).ready(function() { 
+      planManpower.GetArmy();
      
     }); 
   </script>

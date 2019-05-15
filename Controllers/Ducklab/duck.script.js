@@ -1,5 +1,5 @@
 var duck  = {
-				url : '../Model/Ducklab/duck.inc.php'
+			//	url : '../Model/Ducklab/duck.inc.php'
 			};
 
 duck.SetTitlePage=function(){
@@ -612,7 +612,7 @@ $( document ).ready(function() {
 		localStorage.langcode ="th";
 	}
 	
-	console.log(localStorage.lang + "||"+localStorage.langcode);
+	//console.log(localStorage.lang + "||"+localStorage.langcode);
 
 	 
 	$(".btn_back").click(function(){

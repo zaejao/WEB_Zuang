@@ -155,10 +155,10 @@
 </style>
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
 <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../../Asset/js/jquery.mjs.nestedSortable.js"></script> -->
+<script type="text/javascript" src="../../Asset/js/jquery.mjs.nestedSortable.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -291,12 +291,13 @@
 
 <?php
 require_once '../../config.php';
-$sql = " SELECT OrgStrucId, OrgLevelId, OrgPartId, OrgGroupTypeId, OrgTypeId, OrgStrucMain, OrgStrucSubMain, OrgStrucName, OrgStrucActive 
-FROM OrgStruc; ";
-
+$sql = " SELECT OrgStrucId, OrgLevelId, OrgPartId, OrgGroupTypeId, OrgTypeId, OrgStrucMain, OrgStrucSubMain, OrgStrucName, OrgStrucActive FROM OrgStruc; ";
+// echo $sql;
 $params = array();
 $options = array("Scrollable" => SQLSRV_CURSOR_KEYSET);
 $query = sqlsrv_query($conn, $sql, $params, $options);
+
+// if($query){echo "query";}
 
 $rows = sqlsrv_num_rows($query);
 
@@ -306,9 +307,8 @@ if ($rows > 0) {
 		$category['categories'][$result['OrgStrucId']] = $result;
 		$category['parent_cats'][$result['OrgStrucMain']][] = $result['OrgStrucId'];
 		?>
-
-	<?php	
-	}
+	<?php
+}
 }
 
 
@@ -327,13 +327,13 @@ function getCategories($parent, $category, $csui = true)
 			if (!isset($category['parent_cats'][$cat_id])) {
 				$html .= " <li class='mjs-nestedSortable-leaf' id='menuItem_" . $cat_id . "'>";
 				$html .= "<div class='menuDiv'>";
-				$html .= '<input type="checkbox" name="valueHirarchy" value="' . $cat_id . '"' ;
-					if(isset($_GET['OrgStrucMain'])&&($_GET['OrgStrucMain']==$cat_id)){
-						$html .= 'checked';
-					}
+				$html .= '<input type="checkbox" name="valueHirarchy" value="' . $cat_id . '"';
+				if (isset($_GET['OrgStrucMain']) && ($_GET['OrgStrucMain'] == $cat_id)) {
+					$html .= 'checked';
+				}
 				$html .= '>';
 				$html .= '<span data-id="' . $cat_id . '" class="itemTitle"></span>';
-				$html .= "<a onclick='showDetail(" . $cat_id . ")'>". $category['categories'][$cat_id]['OrgStrucName'] ."</a>  ";
+				$html .= "<a onclick='showDetail(" . $cat_id . ")'>" . $category['categories'][$cat_id]['OrgStrucName'] . "</a>  ";
 				$html .= "</div>";
 				$html .= "</li> ";
 			}
@@ -344,7 +344,7 @@ function getCategories($parent, $category, $csui = true)
 					$html .= 'checked';
 				}
 				$html .= '>';
-				$html .= "<a onclick='showDetail(" . $cat_id . ")'>" . $category['categories'][$cat_id]['OrgStrucName']."</a>";
+				$html .= "<a onclick='showDetail(" . $cat_id . ")'>" . $category['categories'][$cat_id]['OrgStrucName'] . "</a>";
 				$html .= '<span data-id="' . $cat_id . '" class="itemTitle"></span>';
 				$html .= "</div>";
 				$html .= getCategories($cat_id, $category, $csui = false);
@@ -357,10 +357,11 @@ function getCategories($parent, $category, $csui = true)
 }
 // -------ถูกต้อง--------
 ?>
-<section id="demo" class="text-left">
 
-	<?php echo getCategories(1, $category);
+<section id="demo" class="text-left">
+	<?php echo getCategories(0, $category);
 	//echo  getCategories(0, 1);
+	// echo "pneo";
 	?>
 </section>
 
@@ -375,8 +376,6 @@ function getCategories($parent, $category, $csui = true)
 	});
 
 	function hirarchyValue(valueHi) {
-
 		alert("valueHirarchy" + valueHi);
 	}
-
 </script>

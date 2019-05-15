@@ -65,37 +65,28 @@
                                                   </div>
                                               </div>
                                           </div> <!-- card -->
-
                            <div class="container">
-
                                               <div class="card-content">
                                                   <div class="card-body">
-
-
                                                       <div class="tab-content px-1 pt-1">
-                                                          <div role="tabpanel" class="tab-pane active" id="tab11" aria-expanded="true" aria-labelledby="base-tab11">
-
+                                                          <div role="tabpanel60" class="tab-pane active" id="tab60" aria-expanded="true" aria-labelledby="base-tab60">
                                                               <div class="card collapse-icon accordion-icon-rotate active">
-                                                                  <div id="headingCollapse31" class="card-header bg-success">
-                                                                      <a data-toggle="collapse" href="#collapse31" aria-expanded="true" aria-controls="collapse31" class="card-title lead white">
-                                                                          <h6 style="margin-left:5px;">บันทึก/แก้ไข การเปลี่ยนชื่อ/สกุล</h6>
+                                                                  <div id="headingCollapse60" class="card-header bg-success">
+                                                                      <a data-toggle="collapse" href="#collapse60" aria-expanded="true" aria-controls="collapse60" class="card-title lead white">
+                                                                          <h6 style="margin-left:5px;">บันทึก/แก้ไข เหล่าทหาร</h6>
                                                                       </a>
                                                                   </div>
-
-
-
                                                                   <div class="tab-content px-1 pt-1">
                                                                                   <div role="tabpanel55"
                                                                                       class="tab-pane active"
-                                                                                      id="tab1155" aria-expanded="true"
-                                                                                      aria-labelledby="base-tab1155">
-
+                                                                                      id="tab60" aria-expanded="true"
+                                                                                      aria-labelledby="base-tab60">
                                                                                       <div
                                                                                           class="card collapse-icon accordion-icon-rotate active">
                                                                                           
-                                                                                          <div id="collapse55"
-                                                                                              role="tabpanel55"
-                                                                                              aria-labelledby="headingCollapse55"
+                                                                                          <div id="collapse60"
+                                                                                              role="tabpanel60"
+                                                                                              aria-labelledby="headingCollapse60"
                                                                                               class="card-collapse collapse show"
                                                                                               aria-expanded="true">
                                                                                               <div class="card-content">
@@ -103,15 +94,144 @@
                                                                                                       class="card-body">
                                                                                                       <div
                                                                                                           class="row match-height">
+                                                                                                          <div
+                                                                                                              class="col-md-6">
+                                                                                                              <div
+                                                                                                                  class="card-body">
+                                                                                                                  เหล่า
+                                                                                                                  :
+                                                                                                                  <select
+                                                                                                                      class="select2 form-control"
+                                                                                                                      style="width: 100%;">
+                                                                                                                      <optgroup
+                                                                                                                          label="สัญญาบัตร">
+                                                                                                                          <option
+                                                                                                                              value="AK">
+                                                                                                                              เลือก
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศเอก/พล.อ.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศโท/พล.อ.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศตรี/พล.อ.ต.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศจัตวา/พล.อ.จ.(ยกเลิกแล้ว)
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศเอก/น.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศโท/น.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศตรี/น.ต.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศเอก/ร.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศโท/ร.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศตรี/ร.ต.
+                                                                                                                          </option>
+                                                                                                                      </optgroup>
+
+                                                                                                                  </select>
+                                                                                                              </div>
+
+                                                                                                          </div>
+
+
+
+                                                                                                          
+                                                                                                          <div
+                                                                                                              class="col-md-6">
+                                                                                                              <div
+                                                                                                                  class="card-body">
+                                                                                                                  คำสั่ง
+                                                                                                                  :
+                                                                                                                  <select
+                                                                                                                      class="select2 form-control"
+                                                                                                                      style="width: 100%;">
+                                                                                                                      <optgroup
+                                                                                                                          label="สัญญาบัตร">
+                                                                                                                          <option
+                                                                                                                              value="AK">
+                                                                                                                              เลือก
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศเอก/พล.อ.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศโท/พล.อ.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศตรี/พล.อ.ต.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              พลอากาศจัตวา/พล.อ.จ.(ยกเลิกแล้ว)
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศเอก/น.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศโท/น.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              นาวาอากาศตรี/น.ต.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศเอก/ร.อ.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศโท/ร.ท.
+                                                                                                                          </option>
+                                                                                                                          <option
+                                                                                                                              value="HI">
+                                                                                                                              เรืออากาศตรี/ร.ต.
+                                                                                                                          </option>
+                                                                                                                      </optgroup>
+
+                                                                                                                  </select>
+                                                                                                              </div>
+
+                                                                                                          </div>
+
+
+
 
 
                                                                                                           <div
-                                                                                                              class="col-lg-6 col-md-12">
+                                                                                                              class="col-lg-3 col-md-12">
                                                                                                               <div
                                                                                                                   class="card-block">
                                                                                                                   <div
                                                                                                                       class="card-body ">
-                                                                                                                      ชื่อเดิม
+                                                                                                                      ลำดับที่ในคำสั่ง
                                                                                                                       :
                                                                                                                       <input
                                                                                                                           class="input form-control"
@@ -122,12 +242,12 @@
                                                                                                               </div>
                                                                                                           </div>
                                                                                                           <div
-                                                                                                              class="col-lg-6 col-md-12">
+                                                                                                              class="col-lg-3 col-md-12">
                                                                                                               <div
                                                                                                                   class="card-block">
                                                                                                                   <div
                                                                                                                       class="card-body ">
-                                                                                                                      นามสกุลเดิม
+                                                                                                                      นามเลขที่คำสั่ง
                                                                                                                       :
                                                                                                                       <input
                                                                                                                           class="input form-control"
@@ -137,166 +257,12 @@
                                                                                                                   </div>
                                                                                                               </div>
                                                                                                           </div>
-                                                                                                          <div
-                                                                                                              class="col-lg-6 col-md-12">
-                                                                                                              <div
-                                                                                                                  class="card-block">
-                                                                                                                  <div
-                                                                                                                      class="card-body ">
-                                                                                                                      ชื่อใหม่
-                                                                                                                      :
-                                                                                                                      <input
-                                                                                                                          class="input form-control"
-                                                                                                                          style="width: 100%;"
-                                                                                                                          placeholder=" ">
-
-                                                                                                                  </div>
-                                                                                                              </div>
-                                                                                                          </div>
-                                                                                                          <div
-                                                                                                              class="col-lg-6 col-md-12">
-                                                                                                              <div
-                                                                                                                  class="card-block">
-                                                                                                                  <div
-                                                                                                                      class="card-body ">
-                                                                                                                      นามสกุลใหม่
-                                                                                                                      :
-                                                                                                                      <input
-                                                                                                                          class="input form-control"
-                                                                                                                          style="width: 100%;"
-                                                                                                                          placeholder=" ">
-
-                                                                                                                  </div>
-                                                                                                              </div>
-                                                                                                          </div>
-
-                                                                                           
-                                                                                                          <div
-                                                                                                              class=" col-md-6">
-                                                                                                              <div
-                                                                                                                  class="card-block">
-                                                                                                                  <div
-                                                                                                                      class="card-body ">
-                                                                                                                      หลักฐาน.(ทอ.)
-                                                                                                                      :
-                                                                                                                      <select
-                                                                                                          class="select2 form-control"
-                                                                                                          style="width: 100%;">
-                                                                                                          <optgroup
-                                                                                                              label="สัญญาบัตร">
-                                                                                                              <option
-                                                                                                                  value="AK">
-                                                                                                                  เลือก
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  พลอากาศเอก/พล.อ.อ.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  พลอากาศโท/พล.อ.ท.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  พลอากาศตรี/พล.อ.ต.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  พลอากาศจัตวา/พล.อ.จ.(ยกเลิกแล้ว)
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  นาวาอากาศเอก/น.อ.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  นาวาอากาศโท/น.ท.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  นาวาอากาศตรี/น.ต.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  เรืออากาศเอก/ร.อ.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  เรืออากาศโท/ร.ท.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="HI">
-                                                                                                                  เรืออากาศตรี/ร.ต.
-                                                                                                              </option>
-                                                                                                          </optgroup>
-                                                                                                          <optgroup
-                                                                                                              label="ชั้นประทวน">
-                                                                                                              <option
-                                                                                                                  value="CA">
-                                                                                                                  พันจ่าอากาศเอก
-                                                                                                                  พิเศษ/พ.อ.อ.(พ.)
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="NV">
-                                                                                                                  พันจ่าอากาศเอก/พ.อ.อ.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="OR">
-                                                                                                                  พันจ่าอากาศโท/พ.อ.ท
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="WA">
-                                                                                                                  พันจ่าอากาศตรี/พ.อ.ต
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="NV">
-                                                                                                                  จ่าอากาศเอก/จ.อ.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="OR">
-                                                                                                                  จ่าอากาศโท/จ.ท.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="WA">
-                                                                                                                  จ่าอากาศตรี/จ.ต.
-                                                                                                              </option>
-                                                                                                              <option
-                                                                                                                  value="WA">
-                                                                                                                  พลทหาร/พลฯ
-                                                                                                              </option>
-                                                                                                          </optgroup>
-                                                                                                      </select>
-
-                                                                                                                  </div>
-                                                                                                              </div>
-                                                                                                          </div>
-
                                                                                                          
 
-                                                                                                          <div
-                                                                                                              class="col-md-3">
-                                                                                                              <div
-                                                                                                                  class="card-body ">
-                                                                                                                 ลำดับที่ในคำสั่ง :
-                                                                                                                  <input
-                                                                                                                      class="input form-control"
-                                                                                                                      style="width: 100%;"
-                                                                                                                      placeholder=" ">
-                                                                                                              </div>
+                                                                                           
+                                                                                                        
 
-                                                                                                          </div>
-                                                                                                          <div
-                                                                                                              class="col-md-3">
-                                                                                                              <div
-                                                                                                                  class="card-body ">
-                                                                                                                  เลขที่คำสั่ง :
-                                                                                                                  <input
-                                                                                                                      class="input form-control"
-                                                                                                                      style="width: 100%;"
-                                                                                                                      placeholder=" ">
-                                                                                                              </div>
-
-                                                                                                          </div>
+                                                                                                         
 
 
 
@@ -372,23 +338,10 @@
 
 
 
-                                                                                                          <div
-                                                                                                              class="col-lg-12 col-md-12">
+                                                                                                          
 
 
-                                                                                                              <div
-                                                                                                                  class="card-block">
-                                                                                                                  <div
-                                                                                                                      class="card-body ">
-                                                                                                                      หลักฐานทะเบียนราษฏร์
-                                                                                                                      :
-                                                                                                                      <input
-                                                                                                                          class="input form-control"
-                                                                                                                          style="width: 100%;"
-                                                                                                                          placeholder="">
-                                                                                                                  </div>
-                                                                                                              </div>
-                                                                                                          </div>
+
                                                                                                           <div
                                                                                                               class="col-lg-6 col-md-12">
                                                                                                               <div
@@ -415,10 +368,38 @@
 
                                                                                                               </div>
                                                                                                           </div>
+
+
+
+                                                                                                          
+                                                                                                          <div
+                                                                                                              class="col-lg-12 col-md-12">
+
+                                                                                                              <div
+                                                                                                                  class="card-block">
+                                                                                                                  <div
+                                                                                                                      class="card-body ">
+                                                                                                                      หมายเหตุ
+                                                                                                                      :
+                                                                                                                      <input
+                                                                                                                          class="input form-control"
+                                                                                                                          style="width: 100%;height: 150px;"
+                                                                                                                          placeholder="">
+                                                                                                                  </div>
+                                                                                                              </div>
+                                                                                                          </div>
+
+
+
+
                                                                                                       </div>
                                                                                                   </div>
                                                                                               </div>
                                                                                           </div>
+
+
+
+
 
                                                                                       </div>
 

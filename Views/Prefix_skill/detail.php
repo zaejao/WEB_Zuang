@@ -127,7 +127,6 @@
                   // console.log(error);
               }
           });
-
           $('#prefixSkillTable').dataTable({
                 "oLanguage": {
                     "sEmptyTable": "ไม่มีข้อมูลนี้ในตาราง"

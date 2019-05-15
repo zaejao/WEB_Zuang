@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" charset="utf8" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" charset="utf8"
+        href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <title>table</title>
 </head>
 
 <body>
-<script src="../../Controllers/jquery.dataTables.js" type="text/javascript"></script>
-<script src="../../Controllers/jquery.js" type="text/javascript"></script>
+    <script src="../../Controllers/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../../Controllers/jquery.js" type="text/javascript"></script>
 
 
     <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
     </script>
     <table id="example" class="display" style="width:75%">
         <thead>
@@ -94,4 +95,4 @@
     </table>
 </body>
 
-</html> 
+</html>

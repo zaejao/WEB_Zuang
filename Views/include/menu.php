@@ -149,17 +149,6 @@
                 </li>
             </ul>
         </li>
-
-         <!-- ระบบงานสรรหาและบรรจุกำลังพล la-odnoklassniki -->
-         
-         <li class=" nav-item <?php if($menu1 =="RECRNAPPOINT"){ echo "open";} ?>"><a href="#"><i class="la la-street-view"></i><span class="menu-title" data-i18n="nav.navbars.main">ระบบงานสรรหาและบรรจุกำลังพล</span></a>
-            <ul class="menu-content">
-                <li class=" "><a class="menu-item <?php if($menu2 =="PlanManpower"){ echo "active";} ?>" href="../PlanManpower/index.php"> แผนการบรรจุกำลังพล</a> 
-                </li>
-            </ul>
-        </li>
-
-
         <!-- ระบบงานโอนย้าย -->
         <li class=" nav-item"><a href="#"><i class="la la-random"></i><span class="menu-title" data-i18n="nav.vertical_nav.main">ระบบงานย้ายโอน</span></a>
             <ul class="menu-content">
@@ -173,17 +162,17 @@
             <ul class="menu-content">
                 <li><a class="menu-item" href="../Profile/index.php" >ประวัติข้าราชการ</a>
                 </li>
-                <li><a class="menu-item" href="layout-content-left-sidebar.html" data-i18n="nav.page_layouts.3_columns.left_sidebar">ภูมิลำเนา</a>
+                <li><a class="menu-item" href="/Hris/Views/Homeland/index.php">ภูมิลำเนา</a>
                 </li>
-                <li><a class="menu-item" href="layout-content-left-sidebar.html" data-i18n="nav.page_layouts.3_columns.left_sidebar">การศึกษา/ความรู้/ความชำนาญ</a>
+                <li><a class="menu-item" href="/Hris/Views/Education_knowledge_skills/index.php">การศึกษา/ความรู้/ความชำนาญ</a>
                 </li>
-                <li><a class="menu-item" href="layout-content-left-sidebar.html" data-i18n="nav.page_layouts.3_columns.left_sidebar">ตำแหน่ง/เครื่องราชอิสริยาภรณ์</a>
+                <li><a class="menu-item" href="/Hris/Views/Position_insignia/index.php">ตำแหน่ง/เครื่องราชอิสริยาภรณ์</a>
                 </li>
-                <li><a class="menu-item" href="layout-content-left-sidebar.html" data-i18n="nav.page_layouts.3_columns.left_sidebar">ค่าตอบแทนและเงินเดือน</a>
+                <li><a class="menu-item" href="/Hris/Views/Compensation_salary/index.php">ค่าตอบแทนและเงินเดือน</a>
                 </li>
-                <li><a class="menu-item" href="/Hris/Views/Profile/index.php" data-i18n="nav.page_layouts.3_columns.left_sidebar">ความประพฤติ</a>
+                <li><a class="menu-item" href="/Hris/Views/Behaviour/index.php" >ความประพฤติ</a>
                 </li>
-                <li><a class="menu-item" href="layout-content-left-sidebar.html" data-i18n="nav.page_layouts.3_columns.left_sidebar">สูญเสีย</a>
+                <li><a class="menu-item" href="/Hris/Views/Lose/index.php" >สูญเสีย</a>
                 </li>
 
             </ul>

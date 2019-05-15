@@ -7,7 +7,7 @@
     </p>
   </footer>
 
-  <script src="../../Asset/js/jquery-3.3.1.js" ></script>
+
   <script src="../../Asset/js/sweetalert2.min.js"></script>
   
   <!-- BEGIN VENDOR JS -->
@@ -22,12 +22,11 @@
   <script src="../../app-assets/js/scripts/customizer.js" type="text/javascript"></script>
   <!-- END MODERN JS-->
   <!-- BEGIN PAGE LEVEL JS-->
-  <script src="../../app-assets/js/scripts/tables/datatables/datatable-styling.js" type="text/javascript"></script>
+  <script src="../../app-assets/js/scripts/tables/datatables/datatable-styling.js"
+  type="text/javascript"></script>
 
-  <script src="../../Asset/js/bootstrap4-toggle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
   
   <!-- END PAGE LEVEL JS-->
-
-  <script src="../../Controllers/Ducklab/duck.script.js" type="text/javascript"></script>
 </body>
 </html>
